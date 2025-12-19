@@ -77,6 +77,7 @@ return [
          */
         'role_pivot_key' => null, // default 'role_id',
         'permission_pivot_key' => null, // default 'permission_id',
+        'team_foreign_key' => 'store_id',
 
         /*
          * Change this if you want to name the related model primary key other than
@@ -93,7 +94,7 @@ return [
          * foreign key is other than `team_id`.
          */
 
-        'team_foreign_key' => 'team_id',
+        // 'team_foreign_key' => 'team_id',
     ],
 
     /*
@@ -131,7 +132,7 @@ return [
      * (view the latest version of this package's migration file)
      */
 
-    'teams' => false,
+    'teams' => true,
 
     /*
      * The class to use to resolve the permissions team id
