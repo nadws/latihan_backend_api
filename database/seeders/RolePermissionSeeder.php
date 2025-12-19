@@ -21,7 +21,7 @@ class RolePermissionSeeder extends Seeder
         ]);
 
         $user = Role::firstOrCreate([
-            'name' => 'user',
+            'name' => 'cashier',
             'guard_name' => 'web',
         ]);
 
